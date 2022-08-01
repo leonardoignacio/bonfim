@@ -12,8 +12,8 @@
 body{
     background-image: url("../img/background.jpg");
     background-repeat:no-repeat;
-    background: rgb(103,194,126);
-background: linear-gradient(77deg, rgba(103,194,126,0.9668242296918768) 0%, rgba(75,167,119,0.927608543417367) 35%, rgba(56,126,79,0.927608543417367) 100%);
+    /*background: rgb(103,194,126);
+background: linear-gradient(77deg, rgba(103,194,126,0.9668242296918768) 0%, rgba(75,167,119,0.927608543417367) 35%, rgba(56,126,79,0.927608543417367) 100%);*/
 
 
 }
@@ -46,8 +46,8 @@ a {
 
 
 .logoImg {
-    width: 10em;
-    height: 4em;
+    width: 9.5em;
+    height: 3.5em;
 }
 
 .carousel{
