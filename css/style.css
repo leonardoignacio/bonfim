@@ -12,10 +12,7 @@
 body{
     background-image: url("../img/background.jpg");
     background-repeat:no-repeat;
-    /*background: rgb(103,194,126);
-background: linear-gradient(77deg, rgba(103,194,126,0.9668242296918768) 0%, rgba(75,167,119,0.927608543417367) 35%, rgba(56,126,79,0.927608543417367) 100%);*/
-
-
+    
 }
 
 
@@ -25,12 +22,12 @@ nav {
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    margin: -4px -2px 2px -2px;
-    padding: 15px 2px 2px 15px;    
+    margin: -4px -2px -2px 0px;
+    padding: 10px 2px 2px 0px;    
 }
 
 img{
-    margin: 5px 2px 2px 5px;
+    margin: 2px 2px 2px 2px;
     padding: 5px 2px 2px 5px;
 }
 
@@ -52,10 +49,10 @@ a {
 
 .carousel{
     position: relative;
-    top: 105px;
+    top: 100px;
     clear: both;
     padding-top: 10px;
-    margin-top: 2px;
+    margin-top: 1px;
     opacity : 0.95;
 }
 .content{
