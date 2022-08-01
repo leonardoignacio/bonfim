@@ -1,0 +1,94 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    font-size: 1em;
+    
+}
+
+body{
+    background-image: url("../img/background.jpg");
+    background-repeat:no-repeat;
+    background: rgb(103,194,126);
+background: linear-gradient(77deg, rgba(103,194,126,0.9668242296918768) 0%, rgba(75,167,119,0.927608543417367) 35%, rgba(56,126,79,0.927608543417367) 100%);
+
+
+}
+
+
+
+nav {
+    z-index: 1;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: -4px -2px 2px -2px;
+    padding: 15px 2px 2px 15px;    
+}
+
+img{
+    margin: 5px 2px 2px 5px;
+    padding: 5px 2px 2px 5px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.MenuLogin{
+   right: 0;
+}
+
+
+
+.logoImg {
+    width: 10em;
+    height: 4em;
+}
+
+.carousel{
+    position: relative;
+    top: 105px;
+    clear: both;
+    padding-top: 10px;
+    margin-top: 2px;
+    opacity : 0.95;
+}
+.content{
+    position: relative;
+    top: 100px;
+    clear: both;
+}
+.contentImg {
+   
+    width: 20em;
+    height: 20em;
+}
+.card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.row {
+    border: 1px 1px 1px 1px;
+    border-color: gray;
+}
+
+.login{
+    position: relative;
+    top: 150px;
+
+    clear: both;
+}
+
+.footer{
+    clear: both;
+    position: relative;
+    top: 180px;
+    bottom: 0;
+    
+    
+}
