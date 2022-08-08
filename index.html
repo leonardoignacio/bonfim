@@ -30,54 +30,69 @@
     <div class="container-fluid">
         <!--navBar-->
         <header class="bg-light">
-            <nav class=" navbar navbar-expand-lg navbar-light bg-light fixed-top" role="navigation">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="img/bonfim.png" alt="Logomarca da empresa"
-                            class="logoImg d-inline-block align-text-top">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuColapse"
-                        aria-controls="menuColapse" aria-expanded="true" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="menuColapse">
-                        <ul id="listaMenu" class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <script>
-                                let itensMenu = [
-                                    { label: 'Home', link: `index.html` },
-                                    { label: 'História', link: `./historia.html` },
-                                    { label: 'Produtos', link: `./index.html` },
-                                    { label: 'Contato', link: `./index.html` }
-                                ]
-                                let menu = new Menu('listaMenu', itensMenu);
-                                menu.render();
-                            </script>
-                        </ul>
-                        <ul class="navbar-nav mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="login.html">Login<img src="img/iconLogin.svg"
-                                        class="px-2 img-fluid"></img></a>
-                            </li>
-                        </ul>
 
+            <nav class="row navbar navbar-expand-md navbar-light bg-light fixed-top clearfix" role="navigation">
+                <div class="col-sm-12 col-md-2">
+                    <div class="row">
+
+                        <div class="col-sm-10 mx-auto col-md-12">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="img/bonfim.png" alt="Logomarca da empresa"
+                                    class="logoImg d-inline-block align-text-center">
+                            </a>
+                        </div>
+                        <div class="col-sm-2 d-none d-sm-block my-2 py-2 col-md-0">
+                            <div class="d-none d-sm-block mx-2">
+                                <button id="btnToggleMenu" class="navbar-toggler" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#menuColapse" aria-controls="menuColapse"
+                                    aria-expanded="true" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <hr>
+                </div>
+                <div class="col-sm-12 col-md-10">
+                    <div class="container">
+                        <div class="collapse navbar-collapse" id="menuColapse">
+                            <ul id="listaMenu" class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <script>
+                                    let itensMenu = [
+                                        { label: 'Home', link: `index.html` },
+                                        { label: 'História', link: `#historia` },
+                                        { label: 'Produtos', link: `#produtos` },
+                                        { label: 'Contato', link: `#contato` }
+                                    ]
+                                    let menu = new Menu('listaMenu', itensMenu);
+                                    menu.render();
+                                </script>
+                            </ul>
+                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="login.html">Login<img
+                                            src="img/iconLogin.svg" class="px-2 img-fluid"></img></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </nav>
+            <hr>
         </header>
     </div><!-- container-fluid -->
 
     <!--Carousel-->
 
-    <div id="idCarousel" class="container-fluid carousel slide py-1 my-10 bg-light my-10" data-bs-ride="carousel">
+    <div id="idCarousel" class="container-fluid carousel slide carousel-dark py-1 my-10 bg-light my-sm-1 my-md-10"
+        data-bs-ride="carousel">
         <hr>
         <div id="idSlids" class="container carousel-inner">
             <script>
                 let slids = [
                     { src: './img/slide1.png', alt: `Slide 1`, active: true },
-                    { src: './img/slide2.png', alt: `Slide 2` },
-                    { src: './img/slide3.png', alt: `Slide 3` },
-                    { src: './img/slide4.png', alt: `Slide 4` }
+                    { src: './img/cardFruta1.jpg', alt: `Slide 2` },
+                    { src: './img/cardLegume1.jpg', alt: `Slide 3` },
+                    { src: './img/cardVerdura1.jpg', alt: `Slide 4` }
                 ]
                 let carousel = new Carousel('idSlids', slids);
                 carousel.render();
@@ -85,36 +100,100 @@
         </div>
         <hr>
         <button class="carousel-control-prev" type="button" data-bs-target="#idCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon bg-light" aria-hidden="true"></span>
+            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+            <span class="visually-hidden">Voltar</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#idCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon bg-light" aria-hidden="false"></span>
+            <span class="carousel-control-next-icon bg-dark" aria-hidden="false"></span>
+            <span class="visually-hidden">Proximo</span>
         </button>
     </div>
 
     <!-- Sessão de conteúdo -->
-    <div class="container my-10 content">
+    <div class="container-fluid my-10 content bg-light">
+        <div class="wrapper fs-5" role="main">
 
-        <section class="wrapper fs-5" role="main">
+            <section class="card">
+                <!-- historia -->
+                <div id="historia" class="row my-1 py-1">
+                    <div class="col-12 card-body my-2">
+                        <h2 class="display-6 fs-5 text-center text-danger text-break"><strong>POR QUE ESCOLHER FRUTAS E
+                                LEGUMES DA BONFIM?</strong></h2>
+                        <div class="mx-10 py-10 mx-auto d-flex aligns-items-center" style="width:70%;">
+                            <p class="text-center fs-5 mx-10 text-break text-muted">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. nting and
+                                typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mx-auto d-flex aligns-items-center" style="width:80%;">
+                        <div class="row mx-auto">
+                            <div class="col-sm-12 col-md-4 my-2">
+                                <h2 class="display-6 fs-6 text-center text-danger text-break"><strong>NOSSOS
+                                        PARCEIROS</strong></h2>
+                                <div class="mx-10 py-10 mx-auto d-flex aligns-items-center" style="width:70%;">
+                                    <p class="text-align-justify fs-5 mx-10 text-break text-muted">
+                                        <small> Lorem Ipsum is simply dummy text of the printing and typesetting
+                                            industry. nting and typesetting industry. Lorem Ipsum.</small>
+                                    </p>
+                                </div>
+                                <div class="icon mb-5" style="width:70%;">
+                                    <img class="text-align-center" src="img/person-lines-fill.svg" alt="">
+                                    <img class="text-align-center" src="img/apple.svg" alt="">
+                                </div>
 
-            <div class="card">
-                <article id="historia" class="row my-10 py-2">
-                    <div class="col-sm-12 col-md-3">
+                            </div>
+                            <div class="col-sm-12 col-md-4 my-2">
+                                <h2 class="display-6 fs-6 text-center text-danger text-break"><strong>EQUIPE
+                                        TREINADA</strong></h2>
+                                <div class="mx-10 py-10 mx-auto d-flex aligns-items-center" style="width:70%;">
+                                    <p class="text-align-justify fs-5 mx-10 text-break text-muted">
+                                        <small>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                            industry. nting and typesetting industry. Lorem Ipsum.</small>
+                                    </p>
+                                </div>
+                                <div class="icon mb-5" style="width:70%;">
+                                    <img class="text-align-center" src="img/person-heart.svg" alt="">
+                                    <img class="text-align-center" src="img/cart-check-fill.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 my-2">
+                                <h2 class="display-6 fs-6 text-center text-danger text-break"><strong>SISTEMA DE
+                                        DISTRIBUIÇÃO</strong></h2>
+                                <div class="mx-10 py-10 mx-auto d-flex aligns-items-center" style="width:70%;">
+                                    <p class="text-align-justify fs-5 mx-10 text-break text-muted">
+                                        <small>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                            industry. nting and typesetting industry. Lorem Ipsum.</small>
+                                    </p>
+                                </div>
+                                <div class="icon mb-5" style="width:70%;">
+                                    <img class="text-align-center" src="img/distribuicao.svg" alt="">
+                                    <img class="text-align-center" src="img/box2-heart-fill.svg" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section> <!-- historia -->
+
+            <section class="container-fluid card">
+                <!-- Sobre nós -->
+                <article class="row my-10 py-2 card-body">
+                    <div class="col-sm-12 col-md-4 my-auto d-block">
                         <a class="navbar-brand" href="#historia">
-                            <img src="img/historia.png" alt="#" class="img-fluid rounded-start my-3">
+                            <img src="img/historia.png" alt="#" class="d-block img-fluid">
                         </a>
                     </div>
-                    <div class="col-sm-12 col-md-9 my-10 card-body bd-highlight">
-                        <div class="card-body">
-                            <h2 class="card-title">História</h2>
-                            <p class="text-align-justify card-text text-break">
+                    <div class="col-sm-12 col-md-8 my-10">
+                        <div class="py-3 mx-5">
+                            <p class="text-align-justify text-break lh-1"><small class="text-muted"> SOBRE NÓS.</small>
+                            </p>
+                            <p class="fs-4 text-align-justify card-text text-break">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it to make a type specimen book. It has
-                                survived not only five centuries, but also the leap into electronic typesetting,
-                                remaining essentially unchanged. It was popularised in the 1960s with the release of
-                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                                publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                has been the industry's standard dummy text ever it to make a type specimen book.
                             </p>
                             <p class="text-align-justify text-break">
                                 <small class="text-muted"> Lorem Ipsum is simply dummy text of the printing and
@@ -129,59 +208,172 @@
                     </div>
 
                 </article> <!-- row -->
-            </div> <!-- card -->
+            </section> <!-- Sobre nós -->
 
-            <div class="card">
-                <article id="produtos" class="row my-10 py-2">
-                    <div class="col-sm-12 col-md-3">
-                        <a class="navbar-brand" href="#historia">
-                            <img src="img/produto.png" alt="#" class="img-fluid rounded-start my-3">
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-9 my-10 card-body bd-highlight">
-                        <div class="card-body">
-                            <h2 class="card-title">Produtos</h2>
-                            <p class="text-align-justify card-text text-break">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it to make a type specimen book. It has
-                                survived not only five centuries, but also the leap into electronic typesetting,
-                                remaining essentially unchanged. It was popularised in the 1960s with the release of
-                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                                publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                            </p>
-                            <p class="text-align-justify text-break">
-                                <small class="text-muted"> Lorem Ipsum is simply dummy text of the printing and
-                                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                    since the 1500s, when an unknown printer took a galley of type and scrambled it to
-                                    make a type specimen book.
-                                    <a class="card-link" href="#">Saiba mais...</a>
-                                </small>
-                            </p>
-
+            <section id="produtos" class="container-fluid">
+                <!--Cat de produtos-->
+                <div class="py-2 my-auto">
+                    <p class="fs-6 text-align-justify card-text text-center text-break"><strong>Principais</strong></p>
+                    <h2 class="fs-4 text-align-justify card-text text-center text-break"><strong>Linhas de Produtos</strong></h2>
+                </div>
+                <div id="idCatCarousel" class="carousel carousel-dark slide  my-2" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="cards-wrapper">
+                                <div class="card categoria">
+                                    <div class="image-wrapper">
+                                        <img src="img/cardFruta1.jpg" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                    <div class="card-footer bg-danger">
+                                        <h3 class="card-title text-light text-center">Frutas</h3>
+                                    </div>
+                                </div>
+                                <div class="card categoria">
+                                    <div class="image-wrapper">
+                                        <img src="img/cardFruta2.jpg" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                    <div class="card-footer bg-danger">
+                                        <h3 class="card-title text-light text-center ">Frutas</h3>
+                                    </div>
+                                </div>
+                                <div class="card categoria">
+                                    <div class="image-wrapper">
+                                        <img src="img/cardFruta3.jpg" class="card-img card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                    <div class="card-footer bg-danger">
+                                        <h3 class="card-title text-light text-center">Frutas</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="cards-wrapper">
+                                <div class="card categoria">
+                                    <div class="image-wrapper">
+                                        <img src="img/cardVerdura1.jpg" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                    <div class="card-footer bg-success">
+                                        <h3 class="card-title text-light text-center">Verduras</h3>
+                                    </div>
+                                </div>
+                                <div class="card categoria">
+                                    <div class="image-wrapper">
+                                        <img src="img/cardVerdura2.jpg" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                    <div class="card-footer bg-success">
+                                        <h3 class="card-title text-light text-center">Verduras</h3>
+                                    </div>
+                                </div>
+                                <div class="card categoria">
+                                    <div class="image-wrapper">
+                                        <img src="img/cardVerdura3.jpg" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                    <div class="card-footer bg-success">
+                                        <h3 class="card-title text-light text-center">Verduras</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="cards-wrapper">
+                                <div class="card categoria">
+                                    <div class="image-wrapper">
+                                        <img src="img/cardLegume1.jpg" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                    <div class="card-footer bg-warning">
+                                        <h3 class="card-title text-center text-light">Legumes</h3>
+                                    </div>
+                                </div>
+                                <div class="card categoria">
+                                    <div class="image-wrapper">
+                                        <img src="img/cardLegume2.jpg" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                    <div class="card-footer bg-warning">
+                                        <h3 class="card-title text-center text-light">Legumes</h3>
+                                    </div>
+                                </div>
+                                <div class="card categoria">
+                                    <div class="image-wrapper">
+                                        <img src="img/cardLegume3.jpg" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                    <div class="card-footer bg-warning">
+                                        <h3 class="card-title text-center text-light">Legumes</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
-                </article> <!-- row -->
-            </div> <!-- card -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#idCatCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                        <span class="visually-hidden">Voltar</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#idCatCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                        <span class="visually-hidden">Proximo</span>
+                    </button>
+                </div>
 
-            <div class="card">
-                <article id="contato" class="row my-10 py-2">
-                    <div class="col-sm-12 col-md-3">
-                        <a class="navbar-brand" href="#contato">
-                            <img src="img/contato.png" alt="#" class="img-fluid rounded-start my-3">
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-9 my-10 card-body bd-highlight">
-                        <div class="card-body">
-                            <h2 class="card-title">Contatos</h2>
-                            <p class="text-align-justify card-text text-break">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it to make a type specimen book. 
-                            </p>
 
-                            <ul class="list-group list-group-flush">
+            </section>
+            <!--Fim Cat de Produtos-->
+
+            <div id="contato" class="card bg-dark  my-10">
+                <article class="row mx-2 my-10 py-2">
+                    <div class="col-12 my-10 card-body text-light">
+                        <h2 class="card-title">Contatos</h2>
+                        <p class="text-align-justify card-text text-break">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text book.
+                        </p>
+                        <div class="contato">
+                            <ul class="list-group m-50 list-group-flush">
                                 <li class="list-group-item">
                                     <h4 class="display-7">Atendimento</h4>
                                 </li>
@@ -193,73 +385,43 @@
                             <small class="text-muted">
                                 <a class="card-link" href="#">Saiba mais...</a>
                             </small>
-
                         </div>
                     </div>
-                   
+
                 </article> <!-- row -->
             </div> <!-- card -->
 
 
 
 
-        </section><!-- wrapper main -->
+        </div><!-- wrapper main -->
     </div><!-- container -->
 
     <div class="container-fluid footer">
         <footer>
             <!--Rodapé-->
-            <div class="container-fluid">
-                <div class="row bg-dark py-1">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!--Categorias-->
-                        <nav class="nav navbar navbar-dark bg-dark">
-                            <ul class="navbar-nav mx-3 text-light">
-                                <li class="nav-item">
-                                    <h4 class="display-7">Categorias</h4>
-                                </li>
-                                <li class="nav-item"><a class="nav-link navbar-brand" href="#">Verduras</a></li>
-                                <li class="nav-item"><a class="nav-link navbar-brand" href="#">Legumes</a></li>
-                                <li class="nav-item"><a class="nav-link navbar-brand" href="#">Frutas</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!--Conteúdos-->
-                        <nav class="nav navbar navbar-dark bg-dark">
-                            <ul class="navbar-nav mx-3 text-light">
-                                <li class="nav-item">
-                                    <h4 class="display-7">Conteúdo</h4>
-                                </li>
-                                <li class="nav-item"><a class="nav-link navbar-brand" href="#">Fale Conosco</a></li>
-                                <li class="nav-item"><a class="nav-link navbar-brand" href="#">Quem somos</a></li>
-                                <li class="nav-item"><a class="nav-link navbar-brand" href="#">Dúvidas Frequentes</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!--Atendimento-->
-                        <nav class="nav navbar navbar-dark bg-dark">
-                            <ul class="navbar-nav mx-3 text-light">
-                                <li class="nav-item">
-                                    <h4 class="display-7">Atendimento</h4>
-                                </li>
-                                <li class="nav-item"><a class="nav-link navbar-brand" href="tel:+55011999999999">(17)9
-                                        9999-9999</a></li>
-                                <li class="nav-item"><a class="nav-link navbar-brand"
-                                        href="mailto:contato@bonfim.com.br">contato@bonfim.com.br</a></li>
-                                <li class="nav-item"><a class="btn btn-outline-light nav-link navbar-brand"
-                                        href="#">FALE CONOSCO</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-lg-3 col-md-12">
-                        <!--Newsletter-->
-                        <nav class="nav navbar navbar-dark bg-dark">
+            <div class="container-fluid bg-success my-10">
+                <div class="row my-10 py-1">
+                    <div class="col-9">
+                        <div class="row mx-auto">
+                            <div class="col-4">
+                                <a  href="index.html">
+                                    <img src="img/bonfim.png" alt="Logomarca da empresa"
+                                        class="logoImg img-fluid align-text-center my-2">
+                                </a>
+                            </div>
+                            <div class="col-8 py-2 my-3">
+                                <h2 class="fs-6 text-center text-light text-break my-auto"><strong>QUALIDADE DO ATENDIMENTO ATÉ A ENTREGA</strong></h2>
+                            </div>
+                        </div>
 
-                            <div class="my-3">
-                                <h5 class="display-7 text-light my-5">Siga-nos</h5>
-                                <a class="btn btn-outline-light ms-2 me-2" href="#">
+                    </div>
+                   
+                    <div class="col-3">
+                        <!--Newsletter-->
+                            <div class="my-2 mx-md-3 mx-sm-0 text-center">
+                                <h5 class="display-7 text-light my-2 text-center">Siga-nos</h5>
+                                <a class="btn btn-outline-light ms-md-3 me-md-2" href="#">
                                     <i class="fab fa-whatsapp"></i>
                                 </a>
                                 <a class="btn btn-outline-light me-2" href="#">
@@ -269,7 +431,6 @@
                                     <i class="fab fa-facebook-square"></i>
                                 </a>
                             </div>
-                        </nav>
                     </div>
                 </div>
             </div>
