@@ -43,9 +43,9 @@
                             <script>
                                 let itensMenu = [
                                     { label: 'Home', link: `index.html` },
-                                    { label: 'História', link: `./historia.html` },
-                                    { label: 'Produtos', link: `./index.html` },
-                                    { label: 'Contato', link: `./index.html` }
+                                    { label: 'História', link: `./index.html#historia` },
+                                    { label: 'Produtos', link: `./index.html#produtos` },
+                                    { label: 'Contato', link: `./index.html#contato` }
                                 ]
                                 let menu = new Menu('listaMenu', itensMenu);
                                 menu.render();
@@ -93,57 +93,28 @@
     <div class="container-fluid footer">
         <footer>
             <!--Rodapé-->
-            <div class="container-fluid">
-                <div class="row bg-dark py-1">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!--Categorias-->
-                        <nav class="nav navbar navbar-dark bg-dark">
-                            <ul class="navbar-nav mx-3 text-light">
-                                <li class="nav-item">
-                                    <h4 class="display-7">Categorias</h4>
-                                </li>
-                                <li class="nav-item"><a class="nav-link navbar-brand" href="#">Verduras</a></li>
-                                <li class="nav-item"><a class="nav-link navbar-brand" href="#">Legumes</a></li>
-                                <li class="nav-item"><a class="nav-link navbar-brand" href="#">Frutas</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!--Conteúdos-->
-                        <nav class="nav navbar navbar-dark bg-dark">
-                            <ul class="navbar-nav mx-3 text-light">
-                                <li class="nav-item">
-                                    <h4 class="display-7">Conteúdo</h4>
-                                </li>
-                                <li class="nav-item"><a class="nav-link navbar-brand" href="#">Fale Conosco</a></li>
-                                <li class="nav-item"><a class="nav-link navbar-brand" href="#">Quem somos</a></li>
-                                <li class="nav-item"><a class="nav-link navbar-brand" href="#">Dúvidas Frequentes</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!--Atendimento-->
-                        <nav class="nav navbar navbar-dark bg-dark">
-                            <ul class="navbar-nav mx-3 text-light">
-                                <li class="nav-item">
-                                    <h4 class="display-7">Atendimento</h4>
-                                </li>
-                                <li class="nav-item"><a class="nav-link navbar-brand" href="tel:+55011999999999">(17)9
-                                        9999-9999</a></li>
-                                <li class="nav-item"><a class="nav-link navbar-brand"
-                                        href="mailto:contato@bonfim.com.br">contato@bonfim.com.br</a></li>
-                                <li class="nav-item"><a class="btn btn-outline-light nav-link navbar-brand"
-                                        href="#">FALE CONOSCO</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-lg-3 col-md-12">
-                        <!--Newsletter-->
-                        <nav class="nav navbar navbar-dark bg-dark">
+            <div class="container-fluid bg-success my-10">
+                <div class="row my-10 py-1">
+                    <div class="col-9">
+                        <div class="row mx-auto">
+                            <div class="col-4">
+                                <a  href="index.html">
+                                    <img src="img/bonfim.png" alt="Logomarca da empresa"
+                                        class="logoImg img-fluid align-text-center my-2">
+                                </a>
+                            </div>
+                            <div class="col-8 py-2 my-3">
+                                <h2 class="fs-6 text-center text-light text-break my-auto"><strong>QUALIDADE DO ATENDIMENTO ATÉ A ENTREGA</strong></h2>
+                            </div>
+                        </div>
 
-                            <div class="my-3">
-                                <h5 class="display-7 text-light my-5">Siga-nos</h5>
-                                <a class="btn btn-outline-light ms-2 me-2" href="#">
+                    </div>
+                   
+                    <div class="col-3">
+                        <!--Newsletter-->
+                            <div class="my-2 mx-md-3 mx-sm-0 text-center">
+                                <h5 class="display-7 text-light my-2 text-center">Siga-nos</h5>
+                                <a class="btn btn-outline-light ms-md-3 me-md-2" href="#">
                                     <i class="fab fa-whatsapp"></i>
                                 </a>
                                 <a class="btn btn-outline-light me-2" href="#">
@@ -153,7 +124,6 @@
                                     <i class="fab fa-facebook-square"></i>
                                 </a>
                             </div>
-                        </nav>
                     </div>
                 </div>
             </div>
