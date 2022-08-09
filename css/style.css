@@ -10,8 +10,9 @@
 }
 
 body{
-    background-image: url("../img/background.jpg");
-    background-repeat:no-repeat;
+    min-width: 320px;
+    /* background-image: url("../img/background.jpg");
+    background-repeat:no-repeat;*/
     
 }
 
