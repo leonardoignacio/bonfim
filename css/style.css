@@ -1,19 +1,16 @@
-
-
-
 * {
     margin: 0;
     padding: 0;
     text-align: justify;
     font-size: 1em;
-    
+
 }
 
-body{
+body {
     min-width: 320px;
     /* background-image: url("../img/background.jpg");
     background-repeat:no-repeat;*/
-    
+
 }
 
 nav {
@@ -22,12 +19,12 @@ nav {
     align-items: center;
     justify-content: space-between;
     margin: -4px -2px -2px 0px;
-    padding: 10px 2px 2px 0px;    
+    padding: 10px 2px 2px 0px;
 }
 
 
 
-img{
+img {
     margin: 2px 2px 2px 2px;
     padding: 5px 2px 2px 5px;
 }
@@ -37,8 +34,8 @@ a {
     text-decoration: none;
 }
 
-.MenuLogin{
-   right: 0;
+.MenuLogin {
+    right: 0;
 }
 
 
@@ -48,51 +45,64 @@ a {
     height: 3.5em;
 }
 
-#idCarousel{
+#idCarousel {
     position: relative;
     top: 100px;
     clear: both;
     padding-top: 10px;
     margin-top: 1px;
-    opacity : 0.95;
+    opacity: 0.95;
     max-height: 28em;
 }
-.content{
+
+.content {
     position: relative;
     top: 100px;
     clear: both;
 }
+
 .contentImg {
-   
+
     width: 20em;
     height: 20em;
 }
-.card{
+
+.card {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.cards-wrapper{
-    display:flex !important;
-    margin: 2px auto 0 auto !important;
-}
+@media screen and (min-width: 568px) {
+    .cards-wrapper {
+        display: flex !important;
+        margin: 2px auto 0 auto !important;
+    }
 
-.categoria{
-    margin: 0 .5em !important;
-    width: calc(100%/3);
-    border-radius: 10px;
-}
-
-
-.image-wrapper{
-    height: 22vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .categoria {
+        margin: 1em auto !important;
+        width: calc(100%/3);
+        border-radius: 10px;
+    }
+    .image-wrapper {
+        height: 22vw;
+        margin: 0 auto;
+        /*display: flex;
+        align-items: center;
+        justify-content: center;*/
+    
+    }
     
 }
 
-.image-wrapper img{
+@media screen and (max-width: 567px) {
+    .categoria:not(:first-child) {
+        display: none;
+    }
+}
+
+
+
+.image-wrapper img {
     max-width: 90%;
     max-height: 80%;
     border-radius: 10%;
@@ -105,28 +115,28 @@ a {
     border-color: gray;
 }
 
-.login{
+.login {
     position: relative;
     top: 150px;
 
     clear: both;
 }
 
-.footer{
+.footer {
     clear: both;
     position: relative;
     top: 100px;
     bottom: 0;
-    
-    
+
+
 }
 
-.icon{
+.icon {
     padding: 1px 1px 1px 1px;
     margin-left: auto !important;
 }
 
-#historia{
+#historia {
     max-height: 15%;
 }
 
@@ -139,12 +149,12 @@ a {
 
 
 
-.contato{
+.contato {
     margin: 2em;
     padding: 1px;
 }
 
-.navbar-toggler button{
+.navbar-toggler button {
     margin: 0px auto;
 
 }
