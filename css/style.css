@@ -24,10 +24,7 @@ nav {
 
 
 
-img {
-    margin: 2px 2px 2px 2px;
-    padding: 5px 2px 2px 5px;
-}
+
 
 
 a {
@@ -52,7 +49,7 @@ a {
     padding-top: 10px;
     margin-top: 1px;
     opacity: 0.95;
-    max-height: 28em;
+    max-height: 30em;
 }
 
 .content {
@@ -72,25 +69,30 @@ a {
     margin-bottom: 10px;
 }
 
+.image-wrapper {
+    height: 100%;
+    max-width: 100%;
+    margin: 1em 1em 1em 1.5em;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
 @media screen and (min-width: 568px) {
     .cards-wrapper {
         display: flex !important;
-        margin: 2px auto 0 auto !important;
+        margin: 2em 2em 2em 2em !important;
     }
 
     .categoria {
-        margin: 1em auto !important;
+        margin: 1em auto 1em 2em !important;
         width: calc(100%/3);
+        height: 100%;
         border-radius: 10px;
     }
-    .image-wrapper {
-        height: 22vw;
-        margin: 0 auto;
-        /*display: flex;
-        align-items: center;
-        justify-content: center;*/
-    
-    }
+
     
 }
 
@@ -134,6 +136,12 @@ a {
 .icon {
     padding: 1px 1px 1px 1px;
     margin-left: auto !important;
+    margin-right: auto !important;
+}
+.icon img {
+    padding: 1px 1px 1px 1px;
+    margin-left: auto !important;
+    margin-right: 0 !important;
 }
 
 #historia {
@@ -146,6 +154,9 @@ a {
     max-height: 300px;
 }
 
+.texto-historia{
+    height: 70%;
+}
 
 
 
