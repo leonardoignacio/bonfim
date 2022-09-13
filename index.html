@@ -16,9 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
     <script src="./js/components.js"></script>
 
@@ -306,25 +304,55 @@
             </section>
             <!--Fim Cat de Produtos-->
 
-            <div id="contato" class="container-fluid card bg-dark  my-10">
+            <div id="contato" class="container-fluid card bg-dark  my-5">
                 <article class="row mx-2 my-10 py-2">
-                    <div class="col-sm-12 col-md-5 my-sm-2 my-md-10 card-body text-light">
-                        <h2 class="card-title mb-5">Contato</h2>
-                        <div class="contato my-20">
-                            <ul class="list-group my-5 mx-2 list-group-flush">
+                    <div class="col-sm-12 col-md-5 my-sm-2 my-md-5 card-body text-light">
+                        <h2 class="card-title mb-3">Contato</h2>
+                        <div class="contato my-5">
+                            <ul class="list-group my-1 mx-2 list-group-flush">
                                 <li class="list-group-item">
-                                    <h4 class="display-7">Atendimento</h4>
+                                    <h4 class="display-7 text-danger text-break"><strong>Atendimento</strong></h4>
                                 </li>
-                                <li class="list-group-item"><a class="fs-6 card-link nav-link navbar-brand"
-                                        href="tel:+55011999999999">(17)9 9999-9999</a></li>
-                                <li class="list-group-item"><a class="fs-6 card-link nav-link navbar-brand"
-                                        href="mailto:contato@bomfin.com.br">bonfim@bonfim.com.br</a></li>
+                                <li class="list-group-item"><strong class="text-center text-danger text-break">Telefoneone p/ Vendas:</strong><a class="text-primary text-break fs-6 card-link nav-link navbar-brand"
+                                        href="tel:+5517996640522">17 99664 05 22</a></li>
+                                <li class="list-group-item"><strong class="text-center text-danger text-break">Telefone da Matriz:</strong><a class="text-primary fs-6 card-link nav-link navbar-brand"
+                                        href="tel:+5517997851320">17 99785 13 20</a></li>
+                                        <li class="list-group-item"><strong class="text-center text-danger text-break"><i class="fab fa-whatsapp img-fluid"></i>WhatsApp:</strong><a class="text-primary fs-6 card-link nav-link navbar-brand"
+                                            href="http://api.whatsapp.com/send?phone=5517997851320">+55 17 99785 1320</a></li>
+
+                                        
+                                <li class="list-group-item"><strong class="text-center text-danger text-break">E-mail:</strong><a class="text-primary fs-6 card-link nav-link navbar-brand"
+                                        href="mailto:contato@bomfin.com.br">contato@b6web.com.br</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-7 my-1 card-body">
-                        <div class="bg-light mx-auto my-auto p-2 w-100 h-100 d-block">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7431.471089327306!2d-48.765141!3d-21.360924!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94beb46744490ce7%3A0xcddfbc77b9a57cc4!2sR.%20Jo%C3%A3o%20Ca%C3%A7%C3%A3o%20Ribeiro%2C%20380%20-%20Botelho%2C%20Santa%20Ad%C3%A9lia%20-%20SP%2C%2015950-000%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1660264614240!5m2!1spt-BR!2sus" width="100%" height="300" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="bg-light mx-auto my-auto p-2 w-100 d-block">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link active" id="botelho-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                                    Matriz- V. Botelho</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="riopreto-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                                    S.J. Rio Preto-SP</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="araraquara-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
+                                    Araraquara-SP</button>
+                                </li>
+                              </ul>
+                              <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="botelho-tab" tabindex="0">
+                                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d656.8534783128064!2d-48.76503196874614!3d-21.361363773073997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94beb46744b8240b%3A0xf2f2eb92337cbbf2!2sR.%20Jo%C3%A3o%20Ca%C3%A7%C3%A3o%20Ribeiro%2C%20376%20-%20Botelho%2C%20Santa%20Ad%C3%A9lia%20-%20SP%2C%2015950-000!5e0!3m2!1spt-BR!2sbr!4v1663076570507!5m2!1spt-BR!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="riopreto-tab" tabindex="0">
+                                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2637.0906098167598!2d-49.42344510574759!3d-20.81517199332709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bdad924ae0f47b%3A0xd21b8817a43cc44d!2sEmbalagens%20Ceasa!5e0!3m2!1spt-BR!2sbr!4v1663077156663!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="araraquara-tab" tabindex="0">
+                                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1557.1112735198874!2d-48.146690219923336!3d-21.8399549923047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b8f4bba5aaa5d1%3A0xe44eae3dec2d5831!2sAv.%20Engenheiro%20Camilo%20Dinucci%2C%206001%20-%20Jardim%20Regina%2C%20Araraquara%20-%20SP%2C%2014808-100!5e0!3m2!1spt-BR!2sbr!4v1663077343473!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                              </div>
                         </div>
                     </div>
 
@@ -344,10 +372,10 @@
                 <div class="row my-10">
                     <div class="col-7 d-flex">
                         <div class="row mx-auto">
-                            <div class="col-3 d-flex">
+                            <div class="col-3 col-sm-3 d-flex">
                                 <a  href="index.html">
                                     <img src="img/bonfim.png" alt="Logomarca da empresa"
-                                        class="logoImg img-fluid align-text-center my-3">
+                                        class="logoImg img-fluid align-text-center my-3 h-50">
                                 </a>
                             </div>
                             <div class="col-9 col-sm-9 mx-auto py-auto my-auto">
@@ -361,7 +389,7 @@
                         <!--Newsletter-->
                             <div class="my-2 mx-sm-auto me-md-0 text-center">
                                 <h5 class="display-7 fs-6 text-light my-1 text-sm-left text-md-justify ms-md-3">Siga-nos</h5>
-                                <a class="btn btn-outline-light mx-sm-auto ms-md-2 me-md-2" href="#">
+                                <a class="btn btn-outline-light mx-sm-auto ms-md-2 me-md-2" href="http://api.whatsapp.com/send?phone=5517997851320">
                                     <i class="fab fa-whatsapp img-fluid"></i>
                                 </a>
                                 <a class="btn btn-outline-light mx-sm-auto me-md-2" href="#">

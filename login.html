@@ -39,22 +39,10 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="menuColapse">
-                        <ul id="listaMenu" class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <script>
-                                let itensMenu = [
-                                    { label: 'Home', link: `index.html` },
-                                    { label: 'História', link: `./index.html#historia` },
-                                    { label: 'Produtos', link: `./index.html#produtos` },
-                                    { label: 'Contato', link: `./index.html#contato` }
-                                ]
-                                let menu = new Menu('listaMenu', itensMenu);
-                                menu.render();
-                            </script>
-                        </ul>
+                       
                         <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="login.html">Login<img src="img/iconLogin.svg"
-                                        class="px-2 img-fluid"></img></a>
+                                <a class="nav-link" href="index.html">Home</a>
                             </li>
                         </ul>
                         <hr>
@@ -71,7 +59,7 @@
                 <div class="col-md-4 text-center">
                     <div class="card shadow rounded">
                         <div class="text-center">
-                            <img src="img/bonfim.png" class="logoImg align-text-top" alt="...">
+                            <strong class="display-6 text-center text-primary">Acesso <img src="img/iconLogin.svg" class="text-primary px-2 img-fluid"></img></strong>
                         </div>
                         <div class="card-body navddg">
                             <div class="form-floating mb-2">
@@ -82,7 +70,7 @@
                                 <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
                                 <label for="floatingPassword">Senha</label>
                             </div>
-                            <a href="#" class="w-100 py-2 mt-3 mb-1 btn btn-lg btn-primary">Faça login</a>
+                            <a href="#" class="w-100 py-2 mt-3 mb-1 btn btn-lg btn-primary">Login</a>
                         </div>
                     </div>
                 </div>
