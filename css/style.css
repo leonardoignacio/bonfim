@@ -46,10 +46,10 @@ a {
     position: relative;
     top: 60px;
     clear: both;
-    padding-top: 10px;
+    padding-top: 5px;
     margin-top: 1px;
     opacity: 0.95;
-    max-height: 30em;
+    
 }
 
 .content {

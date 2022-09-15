@@ -31,7 +31,7 @@ class Carousel {
             let active = img.active ? 'active' : ''
             images += `
                 <div class="carousel-item img-fluid ${active}" data-bs-interval="5000">
-                    <img src="${img.src}" class="rounded mx-auto d-block w-100 img-fluid" alt="${img.alt}">
+                    <img src="${img.src}" class="rounded mx-auto d-block img-fluid" alt="${img.alt}">
                 </div>
             `
         });
@@ -51,8 +51,8 @@ class CatCarousel {
         this.slids.forEach(img => {
             let active = img.active ? 'active' : ''
             images += `
-                <div class="carousel-item img-fluid ${active}" data-bs-interval="5000">
-                    <div class="card" style="width: 18rem;">
+                <div class="carousel-item ${active}" data-bs-interval="5000">
+                    <div class="card" style="width: 20rem;">
                         <img src="" alt="" class="card-img-top">
                         <div class="card-body">
                             <h2 class="card-title">Texto</h2>
