@@ -30,8 +30,11 @@ class Carousel {
         this.slids.forEach(img => {
             let active = img.active ? 'active' : ''
             images += `
-                <div class="carousel-item img-fluid ${active}" data-bs-interval="5000">
-                    <img src="${img.src}" class="rounded mx-auto d-block img-fluid" alt="${img.alt}">
+                <div class="carousel-item banner ${active}" data-bs-interval="3000">
+                    <img src="${img.src}" class="rounded d-block img-fluid" alt="${img.alt}">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="text-center">${img.titulo}</h1>
+                    </div>
                 </div>
             `
         });

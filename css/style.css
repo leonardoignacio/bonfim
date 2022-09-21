@@ -19,9 +19,32 @@ nav {
     align-items: center;
     justify-content: space-between;
     margin: -4px -2px -2px 0px;
-    padding: 10px 2px 2px 0px;
+
 }
 
+
+.banner {
+    height: 100%;
+    
+	overflow-x: hidden;
+    
+
+}
+.banner .carousel-caption {
+    background-color: linear-gradient(50deg,#e6e3e4, #c7c3c412);
+    padding: 5rem;
+}
+
+
+.banner h1 {
+	font-weight: 900;
+    font-size: 4rem;
+	letter-spacing: 0.3rem;
+	margin-top: 8rem;
+    color: white;
+    border:1px;
+	border-color: rgba(255, 243, 243, 0.782);
+}
 
 
 
@@ -43,20 +66,10 @@ a {
 }
 
 #idCarousel {
-    position: relative;
-    top: 60px;
-    clear: both;
-    padding-top: 5px;
-    margin-top: 1px;
     opacity: 0.95;
     
 }
 
-.content {
-    position: relative;
-    top: 100px;
-    clear: both;
-}
 
 .contentImg {
 
@@ -65,13 +78,12 @@ a {
 }
 
 .card {
-    margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .image-wrapper {
     height: 100%;
-    max-width: 100%;
+    max-width: 150%;
     margin: 1em 1em 1em 1.5em;
     align-items: center;
     justify-content: center;
@@ -83,11 +95,11 @@ a {
 @media screen and (min-width: 568px) {
     .cards-wrapper {
         display: flex !important;
-        margin: 2em 2em 2em 2em !important;
+        /*margin: 2em auto 2em auto !important;*/
     }
 
     .categoria {
-        margin: 1em auto 1em 2em !important;
+       /* margin: 1rem auto 1em auto !important;*/
         width: calc(100%/3);
         height: 100%;
         border-radius: 10px;
@@ -105,7 +117,7 @@ a {
 
 
 .image-wrapper img {
-    max-width: 90%;
+    max-width: 150%;
     max-height: 80%;
     border-radius: 10%;
     margin-left: auto;
@@ -127,7 +139,6 @@ a {
 .footer {
     clear: both;
     position: relative;
-    top: 100px;
     bottom: 0;
 
 
@@ -151,7 +162,7 @@ a {
 #historia img {
     margin-right: auto !important;
     margin-left: auto !important;
-    max-height: 300px;
+    max-height: 400px;
 }
 
 .texto-historia{
@@ -161,7 +172,7 @@ a {
 
 
 .contato {
-    margin: 2em;
+    margin: 1em;
     padding: 1px;
 }
 
