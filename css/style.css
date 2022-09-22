@@ -64,11 +64,7 @@ a {
 }
 
 #idCarousel {
-    opacity: 0.95;
-    position: fixed;
-    top: 100px;
-    display: contents;
-    
+    opacity: 0.95;    
 }
 
 
