@@ -25,27 +25,30 @@ nav {
 
 .banner {
     height: 100%;
-    
 	overflow-x: hidden;
+    z-index: 0;
     
 
 }
-.banner .carousel-caption {
-    background-color: linear-gradient(50deg,#e6e3e4, #c7c3c412);
-    padding: 5rem;
+.banner .carousel-caption {    
+    padding: 7rem;
 }
-
 
 .banner h1 {
 	font-weight: 900;
-    font-size: 4rem;
+    font-size: 5rem;
 	letter-spacing: 0.3rem;
 	margin-top: 8rem;
-    color: white;
-    border:1px;
-	border-color: rgba(255, 243, 243, 0.782);
+    text-shadow: 3px 5px rgba(102, 102, 102, 0.462);
+    color: rgb(242, 242, 242);
+
 }
 
+.banner{
+    position: fixed;
+    top: 0px;
+    display: contents;
+}
 
 
 
@@ -67,6 +70,9 @@ a {
 
 #idCarousel {
     opacity: 0.95;
+    position: fixed;
+    top: 100px;
+    display: contents;
     
 }
 
