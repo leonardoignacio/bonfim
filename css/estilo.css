@@ -178,6 +178,7 @@ a {
     text-transform: uppercase;
     transition: background 0.4s, color 0.4s;
     padding: 5px 10px;
+	display:flexbox;
 }
 
 .btn-branco {
@@ -298,12 +299,15 @@ footer ul li {
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
 	h1 {
-		font-size: 5em;
+		font-size: 3.5em;
 		text-shadow: 3px 5px rgba(102, 102, 102, 0.462);
+	}
+	h5 {
+		font-size: 0.8em;
 	}
 	.btn-custom {
 		margin: 10px 15px;
-		font-size: 1em;
+		font-size: 0.8em;
 	}
 }
 
