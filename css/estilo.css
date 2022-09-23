@@ -196,12 +196,7 @@ a {
 	width: 5%;
 }
 
-/* Estrutura conteúdos
------------------------------*/
-.caixa {
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
+
 
 .rotacionar {
 	-ms-transform: rotate(30deg); /* IE 9 */
@@ -302,6 +297,10 @@ footer ul li {
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
+	h1 {
+		font-size: 5em;
+		text-shadow: 3px 5px rgba(102, 102, 102, 0.462);
+	}
 	.btn-custom {
 		margin: 10px 15px;
 		font-size: 1em;
@@ -312,6 +311,7 @@ footer ul li {
 @media (min-width: 576px) and (max-width: 767.98px) {
 	h1 {
 		font-size: 5em;
+		text-shadow: 3px 5px rgba(102, 102, 102, 0.462);
 	}
 	.btn-custom {
 		margin: 10px 15px;
