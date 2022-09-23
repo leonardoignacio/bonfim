@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,339 +27,371 @@
     <script src="./js/components.js"></script>
 
 
-    <title>Bomfim</title>
-</head>
-
-<body>
-    <div class="container-fluid">
-        <!--navBar-->
-        <header class="bg-light">
-
-            <nav class="row navbar navbar-expand-lg navbar-light bg-light" role="navigation">
-                <div class="col-sm-12 col-md-12 col-lg-2">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-10 col-lg-12 mx-auto" style="max-width: 200px;">
-                            <a class="navbar-brand" href="index.html">
-                                <img src="img/bonfim.png" alt="Logomarca da empresa"
-                                    class="logoImg img-fluid align-text-center">
-                            </a>
-                        </div>
-                        <div class="col-sm-2 col-md-2 col-lg-0 my-auto py-2" style="max-width: 100px;">
-                            <div class="mx-auto">
-                                <button id="btnToggleMenu" class="navbar-toggler" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#menuColapse" aria-controls="menuColapse"
-                                    aria-expanded="true" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <title>Home | Cerealista Bonfim</title>
+  </head>
+  <body>
+    
+    <header><!-- inicio Cabecalho -->
+      <nav class="row navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+        <div class="col-sm-12 col-md-12 col-lg-2">
+            <div class="row">
+                <div class="col-sm-6 col-md-10 col-lg-12 mx-auto" style="max-width: 200px;">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/bonfim.png" alt="Logomarca da empresa"
+                            class="logoImg img-fluid align-text-center">
+                    </a>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-10">
-                    <div class="container">
-                        <div class="collapse navbar-collapse" id="menuColapse">
-                            <ul id="listaMenu" class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <script>
-                                    let itensMenu = [
-                                        { label: 'Home', link: `index.html` },
-                                        { label: 'História', link: `#historia` },
-                                        { label: 'Produtos', link: `#produtos` },
-                                        { label: 'Contato', link: `#contato` }
-                                    ]
-                                    let menu = new Menu('listaMenu', itensMenu);
-                                    menu.render();
-                                </script>
-                            </ul>
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="login.html">Login
-                                        <img src="img/iconLogin.svg" class="px-2 img-fluid"></img></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
-    </div><!-- container-fluid -->
-
-    <!--Carousel-->
-
-    <div id="idCarousel" class="container-fluid carousel slide carousel-dark carousel-fade bg-light" data-bs-ride="carousel">
-        <div id="idSlids" class="carousel-inner">
-            <script>
-                let slids = [
-                    { src: './img/slide1.jpg', alt: `Slide 1`, titulo:'Cerealista Bonfim', active: true },
-                    { src: './img/slide2.jpg', alt: `Slide 2` , titulo:'Há mais de 20 anos', texto:'Texto imagem 2 de tomate'},
-                    { src: './img/slide3.jpg', alt: `Slide 3` , titulo:'Entregando o Melhor', texto:'Texto imagem 3 de tomate'},
-                    { src: './img/slide4.jpg', alt: `Slide 4` , titulo:'Para a Sua Família!', texto:'Texto imagem 4 de frutas'}
-                ]
-                let carousel = new Carousel('idSlids', slids);
-                carousel.render();
-            </script>
-        </div>
-        <hr>
-      
-    </div>
-
-    <!-- Sessão de conteúdo -->
-    <div class="container-fluid bg-light">
-        <div class="wrapper fs-5" role="main">
-
-            <section class="card">
-                <!-- historia -->
-                <div id="historia" class="row mb-1">
-                    <div class="col-12 card-body mb-1">
-                        <h2 class="display-6 fs-5 text-center text-danger text-break"><strong>POR QUE ESCOLHER O BONFIM?</strong></h2>
-                        <div class="mx-10 py-10 mx-auto d-flex aligns-items-center" style="width:70%;">
-                            <p class="text-center fs-5 mx-10 text-break text-muted">
-                                O Comércio de Frutas e Legumes Bonfim trabalha dia e noite com dedicação para levar até o seu comércio ou sua casa aquilo que há de melhor no hortifruti. Venha Conhecer!
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </section> <!-- historia -->
-
-            <section class="container-fluid card">
-                <!-- Sobre nós -->
-                <article class="row my-10 py-5 card-body">
-                    <div class="col-sm-12 col-md-6 my-auto d-block">
-                        <a class="navbar-brand" href="#historia">
-                            <img src="img/historia.png" alt="#" class="d-block img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-6 my-10">
-                        <div class="py-sm-1 py-md-5">
-                            <p class="text-align-justify text-break lh-1 text-danger"><small class="text-muted"> SOBRE NÓS.</small>
-                            </p>
-                            <p class="fs-3 text-align-justify card-text text-break text-danger">
-                                O Comércio de Frutas e Legumes Bonfim está há mais de 20 anos entregando os melhores produtos para o seu consumo
-                            </p>
-                            <p class="text-align-justify text-break">
-                                <p class="text-muted"> Aqui temos um vasto conhecimento e experiência no assunto, escolhemos todos os dias os produtos de maior qualidade, com um custo/benefício excelente para agradar todos os públicos. Nosso sistema de distribuição é moderno e contamos com pedidos online para trazer conforto e segurança aos nossos clientes. Venha conferir e seja também nosso cliente. Seu bolso e sua saúde irão agradecer.
-                                </p>
-                            </p>
-
-                        </div>
-                    </div>
-
-                </article> <!-- row -->
-            </section> <!-- Sobre nós -->
-
-            <section id="produtos" class="container-fluid">
-                <!--Cat de produtos-->
-                <div class="py-2 my-auto">
-                    <p class="fs-6 text-align-justify card-text text-center text-break"><strong>Principais</strong></p>
-                    <h2 class="fs-4 text-align-justify card-text text-center text-break"><strong>Linhas de Produtos</strong></h2>
-                </div>
-                <div id="idCatCarousel" class="container carousel carousel-dark slide  my-2" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="cards-wrapper">
-                                <div class="card categoria ms-1">
-                                    <div class="image-wrapper mx-1">
-                                        <img src="img/cardFruta1.jpg" class="card-img-top img-fluid" alt="...">
-                                    </div>
-                                    <div class="card-footer bg-danger">
-                                        <h3 class="card-title text-light text-center">Frutas</h3>
-                                    </div>
-                                </div>
-                                <div class="card categoria mx-2">
-                                    <div class="image-wrapper mx-1">
-                                        <img src="img/cardVerdura1.jpg" class="card-img-top img-fluid" alt="...">
-                                    </div>
-                                    <div class="card-footer bg-success">
-                                        <h3 class="card-title text-light text-center ">Verduras</h3>
-                                    </div>
-                                </div>
-                                <div class="card categoria me-1">
-                                    <div class="image-wrapper mx-1">
-                                        <img src="img/cardLegume1.jpg" class="card-img card-img-top img-fluid" alt="...">
-                                    </div>
-                                    <div class="card-footer bg-warning">
-                                        <h3 class="card-title text-light text-warning">Legumes</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="cards-wrapper">
-                                <div class="card categoria ms-1">
-                                    <div class="image-wrapper mx-1">
-                                        <img src="img/cardVerdura1.jpg" class="card-img-top img-fluid" alt="...">
-                                    </div>
-                                    <div class="card-footer bg-success">
-                                        <h3 class="card-title text-light text-center ">Verduras</h3>
-                                    </div>
-                                </div>
-                                <div class="card categoria mx-2">
-                                    <div class="image-wrapper mx-1">
-                                        <img src="img/cardLegume1.jpg" class="card-img card-img-top img-fluid" alt="...">
-                                    </div>
-                                    <div class="card-footer bg-warning">
-                                        <h3 class="card-title text-light text-warning">Legumes</h3>
-                                    </div>
-                                </div>
-                                <div class="card categoria me-1">
-                                    <div class="image-wrapper mx-1">
-                                        <img src="img/cardFruta1.jpg" class="card-img-top img-fluid" alt="...">
-                                    </div>
-                                    <div class="card-footer bg-danger">
-                                        <h3 class="card-title text-light text-center">Frutas</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="cards-wrapper ms-1">
-                                <div class="card categoria mx-1">
-                                    <div class="image-wrapper mx-1">
-                                        <img src="img/cardLegume1.jpg" class="card-img card-img-top img-fluid" alt="...">
-                                    </div>
-                                    <div class="card-footer bg-warning">
-                                        <h3 class="card-title text-light text-warning">Legumes</h3>
-                                    </div>
-                                </div>
-                                <div class="card categoria mx-2">
-                                    <div class="image-wrapper mx-1">
-                                        <img src="img/cardFruta1.jpg" class="card-img-top img-fluid" alt="...">
-                                    </div>
-                                    <div class="card-footer bg-danger">
-                                        <h3 class="card-title text-light text-center">Frutas</h3>
-                                    </div>
-                                </div>
-                                <div class="card categoria me-1">
-                                    <div class="image-wrapper mx-1">
-                                        <img src="img/cardVerdura1.jpg" class="card-img-top img-fluid" alt="...">
-                                    </div>
-                                    <div class="card-footer bg-success">
-                                        <h3 class="card-title text-light text-center ">Verduras</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#idCatCarousel"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
-                        <span class="visually-hidden">Voltar</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#idCatCarousel"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
-                        <span class="visually-hidden">Proximo</span>
-                    </button>
-                </div>
-
-
-            </section>
-            <!--Fim Cat de Produtos-->
-
-            <div id="contato" class="container-fluid card bg-dark  mt-1">
-                <article class="row mx-md-1 my-md-5 py-md-2">
-                    <div class="col-sm-12 col-md-5 my-sm-1 my-md-5 card-body text-light">
-                        <h2 class="card-title mb-3">Contato</h2>
-                        <div class="contato my-2">
-                            <ul class="list-group my-1 mx-md-1 list-group-flush">
-                                <li class="list-group-item">
-                                    <h4 class="display-6 text-danger text-break"><strong>Atendimento</strong></h4>
-                                </li>
-                                <li class="list-group-item"><strong class="text-center text-danger text-break">Tel. Vendas:</strong>
-                                    <a class="text-primary text-break fs-6 card-link nav-link navbar-brand"
-                                        href="tel:+5517996640522" target="_blank">17 99664 05 22</a></li>
-                                <li class="list-group-item"><strong class="text-center text-danger text-break">Tel. Matriz:</strong>
-                                    <a class="text-primary fs-6 card-link nav-link navbar-brand"
-                                        href="tel:+5517997851320" target="_blank">17 99785 13 20</a></li>
-                                        <li class="list-group-item"><strong class="text-center text-danger text-break"><i class="fab fa-whatsapp img-fluid"></i>WhatsApp:</strong>
-                                            <a class="text-primary fs-6 card-link nav-link navbar-brand"
-                                            href="http://api.whatsapp.com/send?phone=5517997851320" target="_blank">+55 17 99785 1320</a></li>
-
-                                        
-                                <li class="list-group-item"><strong class="text-center text-danger text-break">E-mail:</strong><a class="text-primary fs-6 card-link nav-link navbar-brand"
-                                        href="mailto:contato@bomfin.com.br">contato@b6web.com.br</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-7 my-1 card-body">
-                        <div class="bg-light m-auto w-100 d-block">
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                  <button class="nav-link active" id="botelho-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
-                                    <small class="fs-6">V.Botelho</small></button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                  <button class="nav-link" id="riopreto-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
-                                   <small class="fs-6">SJRio Preto</small></button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                  <button class="nav-link" id="araraquara-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
-                                    <small class="fs-6">Araraquara</small></button>
-                                </li>
-                              </ul>
-                              <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="botelho-tab" tabindex="0">
-                                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d656.8534783128064!2d-48.76503196874614!3d-21.361363773073997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94beb46744b8240b%3A0xf2f2eb92337cbbf2!2sR.%20Jo%C3%A3o%20Ca%C3%A7%C3%A3o%20Ribeiro%2C%20376%20-%20Botelho%2C%20Santa%20Ad%C3%A9lia%20-%20SP%2C%2015950-000!5e0!3m2!1spt-BR!2sbr!4v1663076570507!5m2!1spt-BR!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                </div>
-                                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="riopreto-tab" tabindex="0">
-                                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2637.0906098167598!2d-49.42344510574759!3d-20.81517199332709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bdad924ae0f47b%3A0xd21b8817a43cc44d!2sEmbalagens%20Ceasa!5e0!3m2!1spt-BR!2sbr!4v1663077156663!5m2!1spt-BR!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                </div>
-                                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="araraquara-tab" tabindex="0">
-                                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1557.1112735198874!2d-48.146690219923336!3d-21.8399549923047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b8f4bba5aaa5d1%3A0xe44eae3dec2d5831!2sAv.%20Engenheiro%20Camilo%20Dinucci%2C%206001%20-%20Jardim%20Regina%2C%20Araraquara%20-%20SP%2C%2014808-100!5e0!3m2!1spt-BR!2sbr!4v1663077343473!5m2!1spt-BR!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-
-                </article> <!-- row -->
-            </div> <!-- card -->
-
-
-
-
-        </div><!-- wrapper main -->
-    </div><!-- container -->
-
-    <div class="container-fluid footer">
-        <footer>
-            <!--Rodapé-->
-            <div class="container-fluid bg-primary my-10">
-                <div class="row my-10">
-                    <div class="col-7 d-flex">
-                        <div class="row mx-auto">
-                            <div class="col-3 col-sm-3 d-flex">
-                                <a  href="index.html">
-                                    <img src="img/bonfim.png" alt="Logomarca da empresa"
-                                        class="logoImg img-fluid align-text-center my-3 h-50">
-                                </a>
-                            </div>
-                            <div class="col-9 col-sm-9 mx-auto py-auto my-auto">
-                                <h5 class="fs-6 text-center text-light text-break my-auto"><strong>QUALIDADE DO ATENDIMENTO ATÉ A ENTREGA</strong></h5>
-                            </div>
-                        </div>
-
-                    </div>
-                   
-                    <div class="col-5 d-flex me-0">
-                        <!--Newsletter-->
-                            <div class="my-2 mx-sm-auto me-md-0 text-center">
-                                <h5 class="display-7 fs-6 text-light my-1 text-sm-left text-md-justify ms-md-3">Siga-nos</h5>
-                                <a class="btn btn-outline-light mx-sm-auto ms-md-2 me-md-2" href="http://api.whatsapp.com/send?phone=5517997851320" target="_blank">
-                                    <i class="fab fa-whatsapp img-fluid"></i>
-                                </a>
-                                <a class="btn btn-outline-light mx-sm-auto me-md-2" href="#" target="_blank">
-                                    <i class="fab fa-instagram img-fluid"></i>
-                                </a>
-                                <a class="btn btn-outline-light mx-sm-auto me-md-2" href="#" target="_blank">
-                                    <i class="fab fa-facebook-square img-fluid"></i>
-                                </a>
-                            </div>
+                <div class="col-sm-2 col-md-2 col-lg-0 my-auto py-2" style="max-width: 100px;">
+                    <div class="mx-auto">
+                        <button id="btnToggleMenu" class="navbar-toggler" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#menuColapse" aria-controls="menuColapse"
+                            aria-expanded="true" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                     </div>
                 </div>
             </div>
-        </footer> <!-- Fim Rodapé-->
-    </div>
-    <!--container footer-->
-</body>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-10">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="menuColapse">
+                    <ul id="listaMenu" class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <script>
+                            let itensMenu = [
+                                { label: 'Home', link: `index.html` },
+                                { label: 'História', link: `#historia` },
+                                { label: 'Produtos', link: `#produtos` },
+                                { label: 'Contato', link: `#contato` }
+                            ]
+                            let menu = new Menu('listaMenu', itensMenu);
+                            menu.render();
+                        </script>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="login.html">Login
+                                <img src="img/iconLogin.svg" class="px-2 img-fluid"></img></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </header><!--/fim Cabecalho -->
+    <br>
+    <section id="home" class="d-flex mb-3"><!--home -->
+      <div class="container align-self-center"><!--container -->
+        <div class="row"><!--row -->
+          <div class="col-md-12 capa">
+            
+            <div id="idCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+              <div class="carousel-inner"><!--Inner -->
+                
+                <div class="carousel-item active text-center" data-bs-interval="5000">
+                  <h1 class="text-center">Cerealista Bonfim</h1>
+                 
+                  <p href="" class="btn btn-md btn-custom btn-branco d-none d-sm-block">
+                    <img src="./img/cart-check-fill.svg">
+                       Experiência, higiene e armazenamento adequado  
+                  </p>
+                </div>
 
+                <div class="carousel-item text-center" data-bs-interval="5000">
+                  <h1 class="text-center">Há mais de 20 anos</h1>
+                  <p href="" class="btn btn-md btn-custom btn-branco d-none d-sm-block">
+                    <img src="./img/person-lines-fill.svg">
+                    Sistema de distribuição moderno e integrado  
+                </div>
+
+                <div class="carousel-item text-center" data-bs-interval="5000">
+                  <h1 class="text-center">Entregando o Melhor</h1>
+                  <p href="" class="btn btn-md btn-custom btn-branco d-none d-sm-block">
+                    <img src="./img/distribuicao.svg">
+                    Todos os dias entregamos os melhores produtos
+                </div>
+
+                <div class="carousel-item text-center" data-bs-interval="5000">
+                  <h1 class="text-center">Para sua família!</h1>
+                  <p href="" class="btn btn-md btn-custom btn-branco d-none d-sm-block">
+                    <img src="./img/box2-heart-fill.svg">
+                    Qualidade nos produtos que chegam à sua mesa!   
+                </div>
+                
+
+
+              </div><!--/Inner -->
+
+              <!-- Controles -->
+       
+
+            </div>
+
+          </div>
+        </div><!--/row -->
+      </div><!--/container -->
+    </section><!--/home -->
+
+    
+    <!-- Sessão de conteúdo -->
+    <div class="container-fluid bg-light mt-3">
+      <div class="wrapper fs-5" role="main">
+
+          <section class="card">
+              <!-- historia -->
+              <div id="historia" class="row mb-1">
+                  <div class="col-12 card-body mb-1">
+                    <hr>
+                      <h2 class="display-6 fs-5 text-center text-danger text-break"><strong>POR QUE ESCOLHER O BONFIM?</strong></h2>
+                      <div class="mx-10 py-10 mx-auto d-flex aligns-items-center" style="width:70%;">
+                          <p class="text-center fs-5 mx-10 text-break text-muted">
+                              O Comércio de Frutas e Legumes Bonfim trabalha dia e noite com dedicação para levar até o seu comércio ou sua casa aquilo que há de melhor no hortifruti. Venha Conhecer!
+                          </p>
+                      </div>
+                  </div>
+
+              </div>
+          </section> <!-- historia -->
+
+          <section class="container-fluid card">
+              <!-- Sobre nós -->
+              <article class="row my-10 py-5 card-body">
+                  <div class="col-sm-12 col-md-6 my-auto d-block">
+                      <a class="navbar-brand" href="#historia">
+                          <img src="img/historia.png" alt="#" class="d-block img-fluid">
+                      </a>
+                  </div>
+                  <div class="col-sm-12 col-md-6 my-10">
+                      <div class="py-sm-1 py-md-5">
+                          <p class="text-align-justify text-break lh-1 text-danger"><small class="text-muted"> SOBRE NÓS.</small>
+                          </p>
+                          <p class="fs-3 text-align-justify card-text text-break text-danger">
+                              O Comércio de Frutas e Legumes Bonfim está há mais de 20 anos entregando os melhores produtos para o seu consumo
+                          </p>
+                          <p class="text-align-justify text-break">
+                              <p class="text-muted"> Aqui temos um vasto conhecimento e experiência no assunto, escolhemos todos os dias os produtos de maior qualidade, com um custo/benefício excelente para agradar todos os públicos. Nosso sistema de distribuição é moderno e contamos com pedidos online para trazer conforto e segurança aos nossos clientes. Venha conferir e seja também nosso cliente. Seu bolso e sua saúde irão agradecer.
+                              </p>
+                          </p>
+
+                      </div>
+                  </div>
+
+              </article> <!-- row -->
+          </section> <!-- Sobre nós -->
+
+          <section id="produtos" class="container-fluid">
+              <!--Cat de produtos-->
+              <div class="py-2 my-auto">
+                  <p class="fs-6 text-align-justify card-text text-center text-break"><strong>Principais</strong></p>
+                  <h2 class="fs-4 text-align-justify card-text text-center text-break"><strong>Linhas de Produtos</strong></h2>
+              </div>
+              <div id="idCatCarousel" class="container carousel carousel-dark slide  my-2" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <div class="cards-wrapper">
+                              <div class="card categoria ms-1">
+                                  <div class="image-wrapper mx-1">
+                                      <img src="img/cardFruta1.jpg" class="card-img-top img-fluid" alt="...">
+                                  </div>
+                                  <div class="card-footer bg-danger">
+                                      <h3 class="card-title text-light text-center">Frutas</h3>
+                                  </div>
+                              </div>
+                              <div class="card categoria mx-2">
+                                  <div class="image-wrapper mx-1">
+                                      <img src="img/cardVerdura1.jpg" class="card-img-top img-fluid" alt="...">
+                                  </div>
+                                  <div class="card-footer bg-success">
+                                      <h3 class="card-title text-light text-center ">Verduras</h3>
+                                  </div>
+                              </div>
+                              <div class="card categoria me-1">
+                                  <div class="image-wrapper mx-1">
+                                      <img src="img/cardLegume1.jpg" class="card-img card-img-top img-fluid" alt="...">
+                                  </div>
+                                  <div class="card-footer bg-warning">
+                                      <h3 class="card-title text-light text-warning">Legumes</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="cards-wrapper">
+                              <div class="card categoria ms-1">
+                                  <div class="image-wrapper mx-1">
+                                      <img src="img/cardVerdura1.jpg" class="card-img-top img-fluid" alt="...">
+                                  </div>
+                                  <div class="card-footer bg-success">
+                                      <h3 class="card-title text-light text-center ">Verduras</h3>
+                                  </div>
+                              </div>
+                              <div class="card categoria mx-2">
+                                  <div class="image-wrapper mx-1">
+                                      <img src="img/cardLegume1.jpg" class="card-img card-img-top img-fluid" alt="...">
+                                  </div>
+                                  <div class="card-footer bg-warning">
+                                      <h3 class="card-title text-light text-warning">Legumes</h3>
+                                  </div>
+                              </div>
+                              <div class="card categoria me-1">
+                                  <div class="image-wrapper mx-1">
+                                      <img src="img/cardFruta1.jpg" class="card-img-top img-fluid" alt="...">
+                                  </div>
+                                  <div class="card-footer bg-danger">
+                                      <h3 class="card-title text-light text-center">Frutas</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="cards-wrapper ms-1">
+                              <div class="card categoria mx-1">
+                                  <div class="image-wrapper mx-1">
+                                      <img src="img/cardLegume1.jpg" class="card-img card-img-top img-fluid" alt="...">
+                                  </div>
+                                  <div class="card-footer bg-warning">
+                                      <h3 class="card-title text-light text-warning">Legumes</h3>
+                                  </div>
+                              </div>
+                              <div class="card categoria mx-2">
+                                  <div class="image-wrapper mx-1">
+                                      <img src="img/cardFruta1.jpg" class="card-img-top img-fluid" alt="...">
+                                  </div>
+                                  <div class="card-footer bg-danger">
+                                      <h3 class="card-title text-light text-center">Frutas</h3>
+                                  </div>
+                              </div>
+                              <div class="card categoria me-1">
+                                  <div class="image-wrapper mx-1">
+                                      <img src="img/cardVerdura1.jpg" class="card-img-top img-fluid" alt="...">
+                                  </div>
+                                  <div class="card-footer bg-success">
+                                      <h3 class="card-title text-light text-center ">Verduras</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#idCatCarousel"
+                      data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                      <span class="visually-hidden">Voltar</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#idCatCarousel"
+                      data-bs-slide="next">
+                      <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                      <span class="visually-hidden">Proximo</span>
+                  </button>
+              </div>
+
+
+          </section>
+          <!--Fim Cat de Produtos-->
+
+          <div id="contato" class="container-fluid card bg-dark  mt-1">
+              <article class="row mx-md-1 my-md-2">
+                  <div class="col-sm-12 col-md-5 my-sm-1 my-md-2 card-body text-light">
+                      <h2 class="card-title mb-3 ms-4">Contato</h2>
+                      <div class="contato my-2">
+                          <ul class="list-group my-1 mx-md-1 list-group-flush">
+                              <li class="list-group-item">
+                                  <h4 class="display-6 text-danger text-break"><strong>Atendimento</strong></h4>
+                              </li>
+                              <li class="list-group-item"><strong class="text-center text-danger text-break">Tel. Vendas:</strong>
+                                  <a class="text-primary text-break fs-6 card-link nav-link navbar-brand"
+                                      href="tel:+5517996640522" target="_blank">17 99664 05 22</a></li>
+                              <li class="list-group-item"><strong class="text-center text-danger text-break">Tel. Matriz:</strong>
+                                  <a class="text-primary fs-6 card-link nav-link navbar-brand"
+                                      href="tel:+5517997851320" target="_blank">17 99785 13 20</a></li>
+                                      <li class="list-group-item"><strong class="text-center text-danger text-break"><i class="fab fa-whatsapp img-fluid"></i>WhatsApp:</strong>
+                                          <a class="text-primary fs-6 card-link nav-link navbar-brand"
+                                          href="http://api.whatsapp.com/send?phone=5517997851320" target="_blank">+55 17 99785 1320</a></li>
+
+                                      
+                              <li class="list-group-item"><strong class="text-center text-danger text-break">E-mail:</strong><a class="text-primary fs-6 card-link nav-link navbar-brand"
+                                      href="mailto:contato@bomfin.com.br">contato@b6web.com.br</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-sm-12 col-md-7 my-1 card-body">
+                      <div class="bg-light m-auto w-100 d-block">
+                          <ul class="nav nav-tabs" id="myTab" role="tablist">
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="botelho-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                                  <small class="fs-6">V.Botelho</small></button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="riopreto-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                                 <small class="fs-6">SJRio Preto</small></button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="araraquara-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
+                                  <small class="fs-6">Araraquara</small></button>
+                              </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                              <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="botelho-tab" tabindex="0">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d656.8534783128064!2d-48.76503196874614!3d-21.361363773073997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94beb46744b8240b%3A0xf2f2eb92337cbbf2!2sR.%20Jo%C3%A3o%20Ca%C3%A7%C3%A3o%20Ribeiro%2C%20376%20-%20Botelho%2C%20Santa%20Ad%C3%A9lia%20-%20SP%2C%2015950-000!5e0!3m2!1spt-BR!2sbr!4v1663076570507!5m2!1spt-BR!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              </div>
+                              <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="riopreto-tab" tabindex="0">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2637.0906098167598!2d-49.42344510574759!3d-20.81517199332709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bdad924ae0f47b%3A0xd21b8817a43cc44d!2sEmbalagens%20Ceasa!5e0!3m2!1spt-BR!2sbr!4v1663077156663!5m2!1spt-BR!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              </div>
+                              <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="araraquara-tab" tabindex="0">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1557.1112735198874!2d-48.146690219923336!3d-21.8399549923047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b8f4bba5aaa5d1%3A0xe44eae3dec2d5831!2sAv.%20Engenheiro%20Camilo%20Dinucci%2C%206001%20-%20Jardim%20Regina%2C%20Araraquara%20-%20SP%2C%2014808-100!5e0!3m2!1spt-BR!2sbr!4v1663077343473!5m2!1spt-BR!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              </div>
+                            </div>
+                      </div>
+                  </div>
+
+              </article> <!-- row -->
+          </div> <!-- card -->
+
+          <footer class="bg-primary">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-2 d-none d-md-block">
+                  <a  href="index.html">
+                    <img src="img/bonfim.png" alt="Logomarca da empresa"
+                        class="logoImg img-fluid align-text-center my-3 h-50">
+                </a>
+                </div>
+                <div class="col-12 col-md-7">
+                  <ul class="navbar-nav">
+                    <li>
+                      <h5 class="fs-3 text-center text-light text-break my-5"><strong>QUALIDADE DO ATENDIMENTO ATÉ A ENTREGA</strong></h5>
+                    </li>
+                  </ul>
+                </div>
+               
+                <div class="col-12 col-md-3 text-center">
+                  <ul class="text-center">
+                    <h5 class="display-7 fs-4  text-light my-1 text-md-justify ms-md-5 pt-sm-5 my-sm-10 d-none d-md-block">Siga-nos</h5>
+                     <li>
+                      <a class="btn btn-outline-light ms-sm-auto ms-md-2 me-md-2" href="http://api.whatsapp.com/send?phone=5517997851320" target="_blank">
+                        <i class="fab fa-whatsapp img-fluid"></i>
+                    </a>
+                     </li>
+                     <li>
+                      <a class="btn btn-outline-light ms-sm-auto me-md-2" href="#" target="_blank">
+                        <i class="fab fa-instagram img-fluid"></i>
+                    </a>
+                     </li>
+                     <li>
+                      <a class="btn btn-outline-light ms-sm-auto me-md-2" href="#" target="_blank">
+                        <i class="fab fa-facebook-square img-fluid"></i>
+                    </a>
+                     </li> 
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </footer>
+      
+
+
+
+      </div><!-- wrapper main -->
+  </div><!-- container -->
+
+</body>
 </html>

@@ -31,7 +31,7 @@ class Carousel {
             let active = img.active ? 'active' : ''
             images += `
                 <div class="carousel-item banner ${active}" data-bs-interval="3000">
-                    <img src="${img.src}" class="rounded d-block img-fluid" alt="${img.alt}">
+                    <!-- img src="${img.src}" class="rounded d-block img-fluid" alt="${img.alt}" -->
                     <div class="carousel-caption d-none d-md-block">
                         <h1 class="text-center">${img.titulo}</h1>
                     </div>
