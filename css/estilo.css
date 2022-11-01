@@ -9,6 +9,7 @@
 
 html, body, #home {
 	height: 100%;
+	
 	overflow-x: hidden;
 }
 
@@ -361,6 +362,9 @@ footer ul li {
 	.imgSobre{
 		max-width: 100%;
 		height: auto;
+	}
+	#home {
+		height: 79%;
 	}
 }
 
