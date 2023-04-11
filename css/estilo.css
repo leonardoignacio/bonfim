@@ -49,42 +49,42 @@ body {
 
 @keyframes images {
 	0% {
-		background: url(../img/slide3.jpg),
+		background: url(../img/slide1.jpg),
 		url(../img/ruido.png),
 		linear-gradient(50deg,#04933d,#7c26f8);
 		background-position: 40% 20%;
 		
 	}
 	20% {
-		background: url(../img/slide1.jpg),
+		background: url(../img/slide2.jpg),
 		url(../img/ruido.png),
 		linear-gradient(50deg,#04933d,#7c26f8);
 		background-position: 0% 30%;
 
 	}
 	40% {
-		background: url(../img/slide2.jpg),
+		background: url(../img/slide3.jpg),
 		url(../img/ruido.png),
 		linear-gradient(50deg,#04933d,#7c26f8);
 		background-position: 30% 60%;
 	}
 	50% {
 		
-		background: url(../img/slide3.jpg),
+		background: url(../img/slide2.jpg),
 		url(../img/ruido.png),
 		linear-gradient(50deg,#04933d,#7c26f8);
 		background-position: 20% 30%;
 		
 	}
 	70%{
-		background: url(../img/slide1.jpg),
+		background: url(../img/slide3.jpg),
 		url(../img/ruido.png),
 		linear-gradient(50deg,#04933d,#7c26f8);
 		background-position: 30% 50%;
 	}
 
 	100% {
-		background: url(../img/slide2.jpg),
+		background: url(../img/slide1.jpg),
 		url(../img/ruido.png),
 		linear-gradient(10deg,#04933d,#7c26f8);
 		background-position: 60% 40%;
